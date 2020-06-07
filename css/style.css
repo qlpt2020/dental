@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -15,10 +9,6 @@
   word-wrap: break-word;
   table-layout: fixed;
   list-style: none;
-  /*-webkit-overflow-scrolling: touch;
-	appearance: none;*/
-  -webkit-appearance: none;
-  /*font-display: swap;*/
 }
 
 .VueCarousel-slide {
@@ -90,7 +80,6 @@ img {
 h1, h2, h3, h4, h5 {
   font-family: "FOT-筑紫ゴシック Pr5N D";
   display: block;
-  /*margin: 36px auto 24px auto;*/
 }
 
 body {
@@ -100,7 +89,6 @@ body {
   line-height: 1.8rem;
   background-color: #fff;
   letter-spacing: 0.05rem;
-  /*font-display: swap;*/
 }
 
 header {
@@ -570,16 +558,11 @@ body {
     padding: 0;
     margin: 0;
     border-collapse: collapse;
-    /*a border: 0px;*/
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     word-wrap: break-word;
     table-layout: fixed;
-    /*list-style: none;*/
-    /*-webkit-overflow-scrolling: touch;
-  appearance: none;*/
     -webkit-appearance: none;
-    /*font-display: swap;*/
   }
   ol, ul {
     list-style: none;
@@ -604,7 +587,6 @@ body {
   }
   /**/
   header {
-    /*margin-bottom: 40px; */
     z-index: 999;
   }
   #top-logo {
@@ -730,16 +712,12 @@ body {
     padding: 0;
     margin: 0;
     border-collapse: collapse;
-    /*border: 0px;*/
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     word-wrap: break-word;
     table-layout: fixed;
     list-style: none;
-    /*-webkit-overflow-scrolling: touch;
-  appearance: none;*/
     -webkit-appearance: none;
-    /*font-display: swap;*/
   }
   /**/
   img {
@@ -799,7 +777,6 @@ body {
     text-align: center;
   }
   .headcontent li:last-child {
-    /*text-align: right;*/
     padding: 12px;
   }
   .submenu ul li a {
@@ -860,7 +837,6 @@ body {
     min-width: 260px;
     width: 100%;
     margin: auto;
-    /*padding: 0px;*/
   }
   h3 {
     font-size: 1.4rem;
@@ -889,7 +865,6 @@ body {
   }
   .aboutclinic dl > * {
     display: block;
-    /*width: 100%;*/
   }
   .aboutclinic dl > *:nth-child(2) {
     width: 100%;

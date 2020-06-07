@@ -1,10 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-* {
-	margin: 0;
-	padding:0;
-}
-
 * {
 	padding: 0;
 	margin: 0;
@@ -14,10 +8,6 @@
 	word-wrap: break-word;
 	table-layout: fixed;
 	list-style: none;
-	/*-webkit-overflow-scrolling: touch;
-	appearance: none;*/
-	-webkit-appearance: none;
-	/*font-display: swap;*/
 }
 
 // vueカルーセル
@@ -90,7 +80,6 @@ img {
 h1, h2, h3, h4, h5 {
 	font-family: "FOT-筑紫ゴシック Pr5N D";
 	display: block;
-	/*margin: 36px auto 24px auto;*/
 }
 
 body {
@@ -100,16 +89,12 @@ body {
 	line-height: 1.8rem;
 	background-color: #fff;
 	letter-spacing: 0.05rem;
-	/*font-display: swap;*/
 }
-
 
 header {
 	width: 100%;
 	display: block;
-	// -webkit-box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.2);
 }
-
 
 .headcontent {
 	width: 100%;
@@ -199,30 +184,31 @@ header {
 	max-width: 1200px;
 	margin: auto;
 	justify-content: center;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
+  
+  li {
+    margin: 6px;
+    flex: 1;
+    text-align: center;
+    background-color: #dbceb6;
+    color: #222;
+    border-radius: 50px;
+    padding: 3px 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    max-width: 200px;
+    min-width: 130px;
+    transition: all 0.5s ease 0s;
+    
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      color: #222;
+    }
+  }
 }
-.submenu ul li {
-	margin: 6px;
-	flex: 1;
-	text-align: center;
-	background-color: #dbceb6;
-	color: #222;
-	border-radius: 50px;
-	padding: 3px 6px;
-	font-size: 0.9rem;
-	white-space: nowrap;
-	max-width: 200px;
-	min-width: 130px;
-	transition: all 0.5s ease 0s;
-}
-.submenu ul li a {
-	display: block;
-	width: 100%;
-	text-align: center;
-	height: 100%;
-	color: #222;
-}
-
 .container {
 	width: 100%;
 	margin: auto;
@@ -267,8 +253,6 @@ header {
 	color: white;
 	margin: 12px 0;
 }
-
-
 
 .top h3 {
 	margin: 24px 0 10px 0;
@@ -326,12 +310,9 @@ h3 {
 	text-align: center;
 }
 
-
-
 .gallery {
 	background-color: #282c34;
 }
-
 
 .prof .comment {
 	border: 1px solid #eee;
@@ -374,18 +355,6 @@ h3 {
 	font-size: 1rem;
 	margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .blogscroll {
 	overflow: auto;
@@ -430,16 +399,6 @@ h3 {
 	margin: auto;
 	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*footer*/
 footer {
@@ -530,10 +489,7 @@ footer .copyright {
 	text-align: center;
 }
 
-
-
 /**/
-
 
 body {
     display:  block;                /* ブロック要素にする */
@@ -542,14 +498,14 @@ body {
     animation: anime1 1.5s ease;      /* アニメーション指定 */
 }
 @keyframes anime1 {
-    0% {
-        opacity:  0;                /* 透明度指定 */
-        top: 10px;                  /* 位置指定 */
-    }
-    100% {
-        opacity:  1;                /* 透明度指定 */
-        top: 0;                     /* 位置指定 */
-    }
+  0% {
+      opacity:  0;                /* 透明度指定 */
+      top: 10px;                  /* 位置指定 */
+  }
+  100% {
+      opacity:  1;                /* 透明度指定 */
+      top: 0;                     /* 位置指定 */
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -562,15 +518,10 @@ body {
   padding: 0;
   margin: 0;
   border-collapse: collapse;
-  /*a border: 0px;*/
   box-sizing: border-box;
   word-wrap: break-word;
   table-layout: fixed;
-  /*list-style: none;*/
-  /*-webkit-overflow-scrolling: touch;
-  appearance: none;*/
   -webkit-appearance: none;
-  /*font-display: swap;*/
 }
 
 ol, ul {
@@ -579,33 +530,29 @@ ol, ul {
 
 /**/
 .scroll-top {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 100;
-    background-color: #999;
-		opacity: .8;
-		width: 60px;
-		height: 60px;
-		border-radius: 50%;
-		border: none;
-		color:
-    #fff;
-}
-.scroll-top:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
+  background-color: #999;
+  opacity: .8;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  color:
+  #fff;
 
-
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
 
 /**/
 
 header {
-  /*margin-bottom: 40px; */
   z-index: 999;
-
-  // -webkit-box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.2);
 }
 
 #top-logo {
@@ -655,16 +602,18 @@ header {
   text-align: center;
   padding: 0 -2px;
   line-height: 500%;
-}
-.global-nav__item a {
-  display: block;
-  padding: -2px 0;
-  border-bottom: 1px solid #eee;
-  text-decoration: none;
-  color: #111;
-}
-.global-nav__item a:hover {
-  background-color: #eee;
+
+  a {
+    display: block;
+    padding: -2px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  
+    &:hover {
+      background-color: #eee;
+    }
+  }
 }
 .hamburger__line {
   position: absolute;
@@ -723,15 +672,11 @@ header {
   padding: 0;
   margin: 0;
   border-collapse: collapse;
-  /*border: 0px;*/
   box-sizing: border-box;
   word-wrap: break-word;
   table-layout: fixed;
   list-style: none;
-  /*-webkit-overflow-scrolling: touch;
-  appearance: none;*/
   -webkit-appearance: none;
-  /*font-display: swap;*/
 }
 
 
@@ -802,7 +747,6 @@ a img {
 }
 
 .headcontent li:last-child {
-  /*text-align: right;*/
   padding: 12px;
 }
 
@@ -870,7 +814,6 @@ a img {
   min-width: 260px;
   width: 100%;
   margin: auto;
-  /*padding: 0px;*/
 }
 
 h3 {
@@ -902,7 +845,6 @@ h1, h2, h3, h4, h5 {
 }
 .aboutclinic dl>* {
   display: block;
-  /*width: 100%;*/
 }
 
 .aboutclinic dl>*:nth-child(2) {
@@ -912,11 +854,9 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 16px;
 }
 
-
 .gallery {
   background-color: #282c34;
 }
-
 
 .container {
   width: 100%;
@@ -946,7 +886,6 @@ h1, h2, h3, h4, h5 {
   font-size: 1.1rem;
 }
 
-
 .table {
   display: block;
   width: 100%;
@@ -974,7 +913,6 @@ h1, h2, h3, h4, h5 {
   margin: auto;
 }
 
-
 .cert {
   background-color: #eee;
 }
@@ -993,9 +931,6 @@ h1, h2, h3, h4, h5 {
   font-size: 1rem;
   margin: 0;
 }
-
-
-
 
 .concept h4 {
   background-color: #ef7d0d;
@@ -1047,9 +982,6 @@ h1, h2, h3, h4, h5 {
   font-size: 1.1rem;
 }
 
-
-
-
 footer .obi {
   /* background-color: #e3dfd5; */
   border-bottom: 2px solid #ef7d0d;
@@ -1070,8 +1002,6 @@ footer .obi .table>*:nth-child(2) {
 footer .obi .table>*:nth-child(3) {
   text-align: center;
 }
-
-
 
 .timetable {
   border-collapse: separate;
@@ -1097,14 +1027,9 @@ footer .obi .table>*:nth-child(3) {
   text-align: center;
 }
 
-
-
 footer h4 {
   border-bottom: 2px solid #ef7d0d;
 }
-
-
-
 
 .banners a {
   display: inline-block;
@@ -1114,8 +1039,6 @@ footer h4 {
 .banners img {
 	width: 100%;
 }
-
-
 
 footer .copyright {
   text-align: center;
@@ -1128,13 +1051,13 @@ body {
     animation: anime1 1.5s ease;      /* アニメーション指定 */
 }
   @keyframes anime1 {
-      0% {
-          opacity:  0;                /* 透明度指定 */
-          top: 10px;                  /* 位置指定 */
-      }
-      100% {
-          opacity:  1;                /* 透明度指定 */
-          top: 0;                     /* 位置指定 */
-      }
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: 10px;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: 0;                     /* 位置指定 */
+    }
   }
 }
