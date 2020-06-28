@@ -72,7 +72,6 @@ a img {
 
 img {
   max-width: 100%;
-  /*height: auto;*/
   vertical-align: middle;
 }
 
@@ -95,16 +94,31 @@ header {
   display: block;
 }
 
+.table {
+  display: table;
+  table-layout: fixed;
+}
+
 .headcontent {
   width: 100%;
   margin: auto;
   max-width: 1280px;
 }
 
-.table {
-  display: table;
-  table-layout: fixed;
-  /*width: 100%;*/
+.headcontent .logo img {
+  height: 80px;
+}
+
+.headcontent .tel a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ef7d0d;
+}
+
+.headcontent .about {
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  color: #333;
 }
 
 .headcontent li:first-child {
@@ -164,7 +178,6 @@ header {
 
 .submenu {
   display: block;
-  /*width: 100%;*/
 }
 
 .box > * {
@@ -321,31 +334,6 @@ h3 {
   background-color: #282c34;
 }
 
-.prof .comment {
-  border: 1px solid #eee;
-}
-
-.prof .comment > *:first-child {
-  text-align: center;
-  width: 280px;
-  vertical-align: top;
-}
-
-.prof .comment img {
-  max-width: 260px;
-  margin: auto;
-}
-
-.prof .clinicname {
-  text-align: right;
-  font-size: .9rem;
-}
-
-.prof .comment h4 {
-  text-align: right;
-  font-size: 1.1rem;
-}
-
 .cert {
   background-color: #eee;
 }
@@ -353,7 +341,6 @@ h3 {
 .table {
   display: table;
   table-layout: fixed;
-  /*width: 100%;*/
 }
 
 .cert > * {
@@ -487,7 +474,6 @@ h4 {
 .sitemenu {
   display: block;
   width: 100%;
-  /*padding: 30px auto;*/
 }
 
 .banners {
@@ -551,8 +537,6 @@ body {
   * {
     text-decoration: none;
     color: black;
-  }
-  * {
     padding: 0;
     margin: 0;
     border-collapse: collapse;
@@ -560,7 +544,6 @@ body {
             box-sizing: border-box;
     word-wrap: break-word;
     table-layout: fixed;
-    -webkit-appearance: none;
   }
   ol, ul {
     list-style: none;
@@ -706,43 +689,17 @@ body {
     top: 20px;
   }
   /**/
-  * {
-    padding: 0;
-    margin: 0;
-    border-collapse: collapse;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    word-wrap: break-word;
-    table-layout: fixed;
-    list-style: none;
-    -webkit-appearance: none;
-  }
-  /**/
   img {
     max-width: 100%;
-    /*height: auto;*/
     vertical-align: middle;
   }
   a img {
     border: 0;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-  .headcontent .logo img {
-    height: 80px;
-  }
-  .logo, .logo a {
+  .logo,
+  .logo a {
     text-align: center;
     display: block;
-  }
-  .headcontent .tel a {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #ef7d0d;
-  }
-  .headcontent .about {
-    font-size: 0.8rem;
-    line-height: 0.9rem;
-    color: #333;
   }
   .submenu ul {
     display: block;
@@ -792,20 +749,20 @@ body {
   .topmain {
     position: static;
     height: 420px;
-  }
-  .topmain {
     background-color: #eee;
     text-align: left;
   }
   .topmain > * {
     background-image: url(../images/cal2.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
     padding: 18px;
     height: 420px;
     position: relative;
     line-height: 1.2rem;
+  }
+  .topmain > * background {
+    size: cover;
+    position: bottom center;
   }
   .topmain h1 {
     margin-right: 0;
@@ -825,10 +782,8 @@ body {
     width: 100%;
   }
   .box > * {
-    padding: 18px;
-  }
-  .box > * {
     max-width: 1280px;
+    padding: 18px;
     min-width: 260px;
     width: 100%;
     margin: auto;
@@ -850,6 +805,9 @@ body {
     display: block;
     width: 100%;
   }
+  .aboutclinic dl > * {
+    display: block;
+  }
   .aboutclinic dl > *:nth-child(1) {
     border-bottom: 0;
     width: 100%;
@@ -857,9 +815,6 @@ body {
     margin-top: 16px;
     font-size: 0.9rem;
     color: #ef7d0d;
-  }
-  .aboutclinic dl > * {
-    display: block;
   }
   .aboutclinic dl > *:nth-child(2) {
     width: 100%;
@@ -875,22 +830,25 @@ body {
     margin: auto;
     padding: 12px;
   }
-  .box {
-    width: 100%;
-  }
-  .box > * {
-    padding: 18px;
-  }
   .prof .comment {
     border: 1px solid #eee;
-  }
-  .prof .clinicname {
-    text-align: right;
-    font-size: .9rem;
   }
   .prof .comment h4 {
     text-align: right;
     font-size: 1.1rem;
+  }
+  .prof .comment img {
+    max-width: 260px;
+    margin: auto;
+  }
+  .prof .comment:first-child {
+    text-align: center;
+    width: 280px;
+    vertical-align: top;
+  }
+  .prof .comment .clinicname {
+    text-align: right;
+    font-size: .9rem;
   }
   .table {
     display: block;
@@ -901,31 +859,12 @@ body {
     width: 100%;
     padding: 6px;
   }
-  .prof .comment > *:first-child {
-    padding-top: 24px;
-    width: 100%;
-  }
-  .prof .comment > *:first-child {
-    text-align: center;
-    /*width: 280px;*/
-    vertical-align: top;
-  }
-  .prof .comment img {
-    max-width: 260px;
-    margin: auto;
-  }
   .cert {
     background-color: #eee;
   }
-  .prof .cert > * {
-    padding: 0 12px;
-    width: 100%;
-  }
   .cert > * {
-    /*width: 32%;*/
     vertical-align: top;
     font-size: 0.8rem;
-    /*padding: 12px;*/
   }
   .cert h5 {
     font-size: 1rem;
@@ -945,7 +884,6 @@ body {
   }
   .concept .table > * {
     padding: 24px;
-    /*width: 100%;*/
   }
   .concept .table > *:nth-child(2) {
     width: 100%;
@@ -973,7 +911,6 @@ body {
     font-size: 1.1rem;
   }
   footer .obi {
-    /* background-color: #e3dfd5; */
     border-bottom: 2px solid #ef7d0d;
     margin-top: 24px;
     padding-top: 12px;
@@ -989,22 +926,19 @@ body {
   footer .obi .table > *:nth-child(3) {
     text-align: center;
   }
-  .timetable {
+  footer .obi .table > * .timetable {
     border-collapse: separate;
     border-spacing: 5px;
     width: 100%;
   }
-  .timetable th:nth-child(1) {
-    width: 160px;
-  }
-  .timetable th {
+  footer .obi .table > * .timetable th {
     background-color: #DBCEB6;
     text-align: center;
   }
-  .timetable th:nth-child(1) {
+  footer .obi .table > * .timetable th:nth-child(1) {
     width: 160px;
   }
-  .timetable td {
+  footer .obi .table > * .timetable td {
     background-color: #E9E5DE;
     text-align: center;
   }
@@ -1020,45 +954,6 @@ body {
   }
   footer .copyright {
     text-align: center;
-  }
-  body {
-    display: block;
-    /* ブロック要素にする */
-    margin: 0 auto;
-    /* 要素中央揃え */
-    position: relative;
-    /* 位置指定 */
-    -webkit-animation: anime1 1.5s ease;
-            animation: anime1 1.5s ease;
-    /* アニメーション指定 */
-  }
-  @-webkit-keyframes anime1 {
-    0% {
-      opacity: 0;
-      /* 透明度指定 */
-      top: 10px;
-      /* 位置指定 */
-    }
-    100% {
-      opacity: 1;
-      /* 透明度指定 */
-      top: 0;
-      /* 位置指定 */
-    }
-  }
-  @keyframes anime1 {
-    0% {
-      opacity: 0;
-      /* 透明度指定 */
-      top: 10px;
-      /* 位置指定 */
-    }
-    100% {
-      opacity: 1;
-      /* 透明度指定 */
-      top: 0;
-      /* 位置指定 */
-    }
   }
 }
 /*# sourceMappingURL=style.css.map */
