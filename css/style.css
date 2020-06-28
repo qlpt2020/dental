@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   border-collapse: collapse;
-  /*a border: 0px;*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
@@ -114,14 +113,8 @@ header {
   padding: 12px;
 }
 
-.headcontent .logo img {
+.headcontent li .logo img {
   height: 80px;
-}
-
-.table > * {
-  display: table-cell;
-  vertical-align: top;
-  padding: 24px;
 }
 
 .headcontent li:last-child {
@@ -139,6 +132,12 @@ header {
   font-size: 0.8rem;
   line-height: 0.9rem;
   color: #333;
+}
+
+.table > * {
+  display: table-cell;
+  vertical-align: top;
+  padding: 24px;
 }
 
 .menu {
@@ -466,26 +465,25 @@ h4 {
   margin-top: 18px;
 }
 
-.concept .table > * {
+.concept h4 .table > * {
   padding: 24px;
   width: 100%;
 }
 
-.concept .table > *:nth-child(1) {
+.concept h4 .table > *:nth-child(1) {
   width: 30%;
   text-align: center;
 }
 
-.concept img {
+.concept h4 .table > *:nth-child(2) {
+  text-align: left;
+}
+
+.concept h4 img {
   max-width: 360px;
   width: 100%;
 }
 
-.concept .table > *:nth-child(2) {
-  text-align: left;
-}
-
-/**/
 .sitemenu {
   display: block;
   width: 100%;
@@ -769,17 +767,14 @@ body {
     max-width: 200px;
   }
   .headcontent {
-    /*width: 100%;*/
     margin: auto;
     max-width: 1280px;
   }
   .headcontent li:last-child {
     text-align: center;
-  }
-  .headcontent li:last-child {
     padding: 12px;
   }
-  .submenu ul li a {
+  .headcontent li a {
     display: block;
     width: 100%;
     text-align: center;
